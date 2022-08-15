@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  padding: 0 16px;
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+header h1,header div h3 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+header div h3{
+  position:absolute;
+  right:20px;
+  top:25px;
+  cursor: pointer;
+}
+
+header div h3 span img{
+  border-radius: 50%;
+  height:40px;
+  width:40px;
+  position: absolute;
+  left:-50px;
+  top:-10px;
+}
+
+footer{
+  position:absolute;
+  bottom:0;
+  left:47vw;
+}
+footer p{
+  color:#ccc;
+}
+
+input:focus{
+  border:5px solid rgb(57, 175, 158);
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  color:black;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+.mainForm {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+.mainForm input,
+.mainForm textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+.mainForm button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  font-size: 2rem;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.modelContainer{
+  position:absolute;
+  left:0;
+  top:0;
+  display: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  min-height:100vh;
+  min-width:100vw;
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+}
+
+.model{
+  background-color:#f5ba13;
+  color:#fff;
+  width:30vw;
+  min-width:300px;
+  min-height: 380px;
+  border-radius: 10px;
+  text-align: center;
+  position:relative;
+  left:35vw;
+  top:20vh;
+}
+.modelHeading{
+  text-decoration: underline;
+  padding-top:2rem;
+  font-size:2.5rem;
+  margin:2rem 1rem 2rem 1rem;
+}
+.modelForm{
+  line-height: 1.5;
+  text-align: left;
+  position:relative;
+  left:8%
+}
+
+.close{
+  color:#f5ba13;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 800;
+  padding:0.2rem 0.46rem;
+  border-radius: 5rem;
+  border:none;
+  position:absolute;
+  top:1rem;
+  right:1.5rem;
+}
+
+.namelabel{
+  margin:0 0.2rem 0 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+.emaillabel{
+  margin:0 0.2rem 0 3rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+.passwordlabel{
+  margin: 1rem 0.5rem 3rem 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.login{
+  font-size: 1rem;
+  padding:0.5rem;
+  border :none;
+  margin: 2rem 0.6rem;
+  cursor: pointer;
+  background-color: #fff;
+  color:#f5ba13;
+  font-weight: 700;
+  border-radius: 7px;
+  position:relative;
+  left:30%;
+}
+
+.signup{
+  cursor: pointer;
+  position:relative;
+  left:9rem;
+  text-decoration: underline;
+}
+
+.signup::before{
+  content:"or";
+  text-decoration: none;
+}
+
+.Gbutton{
+  position: relative;
+  left:8.5rem;
+  bottom:1rem;
+  width:180px;
+  height:50px;
+}
+
+.modelInput{
+  border:none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  width:14rem;
+}
+
+.model .AfterLogin{
+  text-align: left;
+  line-height: 1.5;
+  width:83%;
+  position: relative;
+  left:10%;
+  top:30px;
+}
+
+.model .AfterLogin img{
+  border-radius: 25%;
+  margin-bottom: 15px;
+  height:150px
+}
+
+/* .model .AfterLogin .name{
+  text-decoration: underline;
+} */
+
+.model .AfterLogin button{
+  font-size: 1rem;
+  padding:0.5rem;
+  border :none;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+  cursor: pointer;
+  background-color: #fff;
+  color:#f5ba13;
+  font-weight: 700;
+  border-radius: 7px;
+}
+
+.invalid{
+  color:red;
+  margin: 0;
+  margin-left: 25%;
+}
+
+@keyframes modelGrow{
+  from{
+    transform-origin:0 0;
+    transform:scale(0);
+  }
+  to{
+    transform-origin:0 0;
+    transform:scale(100%);
+  }
+}
