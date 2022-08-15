@@ -27,6 +27,8 @@ function Header(props) {
         setLoginStatus(true);
       }
     }).catch(err=>console.log(err));
+
+    console.log("client_id:",Client_Id);
     
   },[])
 
