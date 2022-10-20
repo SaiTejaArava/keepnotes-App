@@ -6,4 +6,4 @@ also implemented google open authentication from google
 to run this file:
 after downloading or cloning this repositery 
 type npm i in the cli
-<a href="https://make-note-app.herokuapp.com/">try it</a>
+<a href="https://make-note-app.herokuapp.com/" target="_blank">try it</a>
